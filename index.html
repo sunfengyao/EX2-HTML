@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shinchan - Homepage</title>
+    <style>
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #f4f4f4;
+        }
+
+        nav ul li {
+            padding: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+
+        nav ul li a:hover {
+            color: #007BFF;
+        }
+
+        h1,
+        h2,
+        h3 {
+            text-align: center;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        form {
+            width: 500px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        select {
+            width: 300px;
+            margin-bottom: 15px;
+        }
+
+        textarea {
+            width: 450px;
+            margin-bottom: 15px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            display: block;
+            margin-top: 15px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+       .image-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            height: 20vh;
+        }
+
+       .video-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+       .character-row {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+       .character {
+            text-align: center;
+        }
+
+       .character img {
+            width: 100px;
+            height: auto;
+        }
+
+       .image-container img {
+            height: 100%;
+            width: auto;
+        }
+
+       .video-container video {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image-container">
+        <img src="assets/shin-chan-banner.jpg" alt="Shinchan Banner">
+        <img src="assets/naughtiest-son.jpg" alt="Naughtiest Son">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Shinchan: Shiro and the Coal Town Game</a></li>
+            <li><a href="#">Characters</a></li>
+            <li><a href="#">Who's your favorite?</a></li>
+        </ul>
+    </nav>
+    <h1>Shinchan: Shiro and the Coal Town</h1>
+    <h3>(Available on: Nintendo Switch and Windows PC)</h3>
+    <div class="video-container">
+        <video src="assets/shinchan-and-the-coal-town.mp4" controls></video>
+    </div>
+    <h4>The Characters</h4>
+    <div class="character-row">
+        <div class="character">
+            <h5>Shinnosuke Nohara (Shinchan)</h5>
+            <img src="assets/character-shinchan.png" alt="Shinchan">
+            <p>The mischievous 5-year-old protagonist known for his hilarious antics and love of choco chips.</p>
+        </div>
+        <div class="character">
+            <h5>Misae Nohara (Mom)</h5>
+            <img src="assets/character-misae.webp" alt="Mom">
+            <p>Shinchan’s short-tempered but loving mother, always trying to keep him in line.</p>
+        </div>
+        <div class="character">
+            <h5>Hiroshi Nohara (Dad)</h5>
+            <img src="assets/character-hiroshi.webp" alt="Dad">
+            <p>The laid-back father who works at a company and enjoys his evening beer.</p>
+        </div>
+    </div>
+    <div class="character-row">
+        <div class="character">
+            <h5>Himawari (Sister)</h5>
+            <img src="assets/character-himawari.png" alt="Sister">
+            <p>The youngest of the Noharas. Loves shiny objects and brandname goods. Smiles sideways, like Shinchan.</p>
+        </div>
+        <div class="character">
+            <h5>Yukino Nohara (Shiro)</h5>
+            <img src="assets/character-shiro.png" alt="Shiro">
+            <p>The family dog – small, fluffy, and sometimes the most sensible member of the household.</p>
+        </div>
+        <div class="character">
+            <h5>Toru Kazama</h5>
+            <img src="assets/character-toru-kazama.webp" alt="Toru Kazama">
+            <p>The smart and responsible friend of Shinchan, often the voice of reason in the group.</p>
+        </div>
+    </div>
+    <form>
+        <h2>Who's your favorite?</h2>
+        <label for="favoriteCharacter">Who's your favorite character?</label>
+        <select id="favoriteCharacter" name="favoriteCharacter">
+            <option value="Shinchan">Shinchan</option>
+            <option value="Mom">Misae Nohara (Mom)</option>
+            <option value="Dad">Hiroshi Nohara (Dad)</option>
+            <option value="Sister">Himawari (Sister)</option>
+            <option value="Shiro">Yukino Nohara (Shiro)</option>
+            <option value="Kazama">Toru Kazama</option>
+        </select>
+
+        <label for="otherCharacter">Character not in the list?</label>
+        <input type="text" id="otherCharacter" name="otherCharacter" placeholder="Enter character name">
+
+        <label for="reason">Why do you like this character?</label>
+        <textarea id="reason" name="reason" rows="4" cols="50" placeholder="State your reasons in a couple of lines..."></textarea>
+
+        <h3>Tell us a bit more about yourself</h3>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+
+        <label for="gender">Your Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male">Male
+        <input type="radio" id="female" name="gender" value="Female">Female
+
+        <label for="birthDate">Your Date of Birth:</label>
+        <input type="date" id="birthDate" name="birthDate" placeholder="dd.mm.yyyy" oninput="this.value = this.value.replace(/\//g, '.')">
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+
+        <input type="submit" value="Submit">
+    </form>
+    <p>© 2025 Programming4</p>
+    <p><a href="mailto:shinchan-lovers@justlearninghtml.com">Get in touch with us: shinchan-lovers@justlearninghtml.com</a></p>
+</body>
+
+</html>
